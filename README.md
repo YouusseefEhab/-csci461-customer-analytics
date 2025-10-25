@@ -70,4 +70,9 @@ cluster.py → creates clusters.txt
 /app/pipeline/results
 
  ```
-![Data Flow]()https://github.com/YouusseefEhab/-csci461-customer-analytics/blob/c3193b3121c7cd2dda709e78dd9f59b3fd39ec95/SScreen/Screenshot%202025-10-25%20214358.png)
+## SCreeN Shots
+![Data Flow](https://github.com/YouusseefEhab/-csci461-customer-analytics/blob/main/SScreen/Screenshot%202025-10-25%20214358.png)
+![Data Flow](https://github.com/YouusseefEhab/-csci461-customer-analytics/blob/main/SScreen/Screenshot%202025-10-25%20214406.png)
+![Data Flow](https://github.com/YouusseefEhab/-csci461-customer-analytics/blob/main/SScreen/Screenshot%202025-10-25%20214444.png)
+![Data Flow](https://github.com/YouusseefEhab/-csci461-customer-analytics/blob/main/SScreen/Screenshot%202025-10-25%20225612.png)
+
