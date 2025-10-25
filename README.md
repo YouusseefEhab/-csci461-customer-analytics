@@ -1,4 +1,4 @@
-# 🧠 Customer Analytics Pipeline (Cancer Data Project)
+# 🧠  Analytics Pipeline (Cancer Data Project)
 
 ## 📘 Project Overview
 This project implements a **complete automated data analytics pipeline** inside a **Docker environment**.  
