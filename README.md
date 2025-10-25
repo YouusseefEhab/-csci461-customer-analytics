@@ -15,17 +15,58 @@ The pipeline demonstrates how machine learning and data analytics can be combine
 
 ---
 
-## 🐳 Docker Build & Run Commands
-```bash
-# Build the Docker image
-docker build -t csci461-customer-analytics:latest .
+ ## 🐳 Docker Build & Run Commands
+ ```bash
+  # Build the Docker image
+ docker build -t csci461-customer-analytics:latest .
 
-# Run the container
-docker run -it --name csci461_run -v $(pwd):/app/pipeline csci461-customer-analytics:latest
+ # Run the container
+ docker run -it --name csci461_run -v $(pwd):/app/pipeline csci461-customer-analytics:latest
 
-# Execute the main pipeline
+ # Execute the main pipeline
+ python ingest.py /app/pipeline/cancer_data.xlsx
+
+ # (Optional) Run summary script
+ chmod +x summary.sh
+ ./summary.sh csci461_run
+
+```
+### Execution Flow
+## 1️⃣ Build the Docker Image
+ ```bash
+  docker build -t csci461-customer-analytics:latest .
+
+```
+
+## 2️⃣ Run the Container
+ ```bash
+ docker run -it --name csci461_run -v $(pwd):/app/pipeline csci461-customer-analytics:latest
+
+
+```
+##  3️⃣ Execute the Pipeline
+ ```bash
 python ingest.py /app/pipeline/cancer_data.xlsx
+ ```
 
-# (Optional) Run summary script
-chmod +x summary.sh
-./summary.sh csci461_run
+## 🔁 Pipeline Flow
+ ```bash
+cancer_data.xlsx
+      ↓
+ingest.py → creates data_raw.csv
+      ↓
+preprocess.py → cleans & saves data_preprocessed.csv
+      ↓
+analytics.py → generates insights (3 text files)
+      ↓
+visualize.py → saves plots (.png)
+      ↓
+cluster.py → creates clusters.txt
+
+ ```
+
+## 📂 Results Location
+ ```bash
+/app/pipeline/results
+
+ ```
