@@ -10,8 +10,8 @@ The pipeline demonstrates how machine learning and data analytics can be combine
 ## 👥 Team Members
 1. **Youssef Ehab Fawzy**  
 2. **Mohamed Montasser**  
-3. **Ziad Hamada**  
-4. **Fady**
+3. **Ziad Mohamed Hamada**  
+4. **Fady Zarif Deep**
 
 ---
 
